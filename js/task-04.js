@@ -10,13 +10,13 @@ incrementButton.addEventListener("click", handlerPlusClick)
 
 function handlerPlusClick() {
     counterValue += 1
-    counter.textContent = `${counterValue}`;
+    counter.textContent = counterValue;
 }
 
 
 function handlerMinusClick() {
     counterValue -= 1
-    counter.textContent = `${counterValue}`;
+    counter.textContent = counterValue;
 }
 
 
