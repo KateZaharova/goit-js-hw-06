@@ -12,10 +12,10 @@ console.log(`Number of categories:`, elementQty);
 
 
 catArray.forEach(function (element, index) {
-    let categoryName = element.querySelector('h2').textContent;
+    let categoryName = element.firstElementChild.textContent;
     console.log(`Category: ${categoryName}`);
     
-    let categoryLength = element.querySelectorAll('li').length;
+    let categoryLength = element.lastElementChild.children.length;
     console.log(`Elements: ${categoryLength}`);
 })
 
